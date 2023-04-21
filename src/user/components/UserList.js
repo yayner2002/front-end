@@ -1,5 +1,5 @@
 import React from "react";
-import userListStyles from "./UserList.module.css";
+import "./UserList.css";
 import UserItem from "./UserItem";
 
 const UserList = (props) => {
@@ -11,7 +11,7 @@ const UserList = (props) => {
     );
   }
   return (
-    <ul>
+    <ul className="users-list">
       {props.users.map((user) => (
         <UserItem
           key={user.id}
